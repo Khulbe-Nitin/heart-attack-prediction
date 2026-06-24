@@ -1,8 +1,12 @@
 import streamlit as st
-import joblib
 import pandas as pd
+from pathlib import Path
+import joblib
 
-model = joblib.load("heart_attack_rf_model.pkl")
+MODEL_PATH = Path(__file__).resolve().parent / "heart_attack_rf_model.pkl"
+
+model = joblib.load(MODEL_PATH)
+
 
 st.title("Heart Attack Prediction")
 
