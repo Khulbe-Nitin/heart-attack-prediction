@@ -1,7 +1,9 @@
 kagglehub
-scikit-learn
-pandas
-joblib
 seaborn
 xgboost
 matplotlib
+streamlit
+pandas
+numpy
+scikit-learn
+joblib
